@@ -7,6 +7,7 @@ for i in range(1, 51, 2):  # Começa em 1, vai até 50, pulando de 2 em 2 (apena
 
 print(lista)
 
+#ou...
 
 lista2 = []
 for i in range(0, 51):
