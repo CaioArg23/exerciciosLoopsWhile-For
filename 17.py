@@ -2,14 +2,15 @@
 
 fatorial = int(input('digite um número inteiro que vou calcular o fatorial do número: '))
 resultado = 1
-calculador = 1
-lista = []
+
 print(f'{fatorial}!=', end="")
-for i in range(1, fatorial+1):
-    print(f'{i}.', end=" ")
+for i in range(fatorial, 0, -1):  
+    if i == 1:
+        print(i, end="")  
+    else:
+        print(i, end=".")
 
-for i in range(1, fatorial+1):
-    calculador = calculador * i
-    lista.append(calculador)
+for i in range(1, fatorial + 1):
+    resultado *= i
 
-print(f'= {lista[-1]}')
+print(f'={resultado}') 
